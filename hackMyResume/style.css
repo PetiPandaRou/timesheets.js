@@ -1,0 +1,254 @@
+/*******************************************************************\
+|                                                                   |
+|  Layout                                                           |
+|                                                                   |
+\*******************************************************************/
+
+@font-face {
+    font-family: "Ubuntu";
+    src: url('Ubuntu.ttf');
+}
+
+* {
+    border: none;
+    padding: 0 auto;
+    margin: 0 auto;
+    font-family: "Ubuntu", "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+body {
+    width:728px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+header {
+    background-color: rgb(34, 34, 34);
+    background-repeat: repeat-x;
+    background-image: -moz-linear-gradient(center top , rgb(194, 190, 186), rgb(124, 121, 118));
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25), 0px -1px 0px rgba(0, 0, 0, 0.1) inset;
+    border-top: 1px solid rgb(221, 221, 221);
+    border-radius: 3px 3px 0px 0px;
+    color: rgb(51, 51, 51);
+    height: 28px;
+}
+
+section {
+    width: 728px;
+    height: 580px;
+    background-color: rgb(76, 73, 70);
+    overflow: hidden;
+}
+
+footer {
+    background-image: -moz-linear-gradient(rgb(236, 236, 236), rgb(168, 168, 168));
+    border-bottom: 1px solid rgb(136, 136, 136);
+    border-top: 1px solid rgb(204, 204, 204);
+    overflow: hidden;
+    margin: 0px;
+    padding: 3px 6px;
+    position: relative;
+    height: 31px;
+}
+
+/***********************************************************************\
+|                                                                       |
+|  Slideshow                                                            |
+|                                                                       |
+\***********************************************************************/
+
+#slideshow {
+    width: 722px;
+    height: 542px;
+    overflow: none;
+    position: relative;
+}
+
+#slideshow > div {
+    position: absolute;
+    overflow: hidden;
+    width: 722px;
+    height: 542px;
+}
+
+div.present {
+    background-image: url(images/background.jpg);
+    color: white;
+}
+
+#slide1, #slide2 {
+    font-size: 36px;
+    text-align: center;
+    text-shadow: black 1px 1px 3px;
+}
+
+#slide1 h1, #slide2 h1 {
+    padding-top: 200px;
+}
+
+#slide1 hr {
+    background-color: #FFFFFF;
+    opacity: 0.75;
+    height: 3px;
+    width: 85%;
+    margin-top: 10px;
+}
+
+#slide3 img {
+    position: absolute;
+    transform         : rotate(-10deg);
+    -o-transform      : rotate(10deg);
+    -moz-transform    : rotate(10deg);
+    -webkit-transform : rotate(10deg);
+    bottom: -40px;
+    border: 2px solid black;
+}
+
+#slide3 h1 {
+    font-size: 36px;
+    text-align: center;
+    text-shadow: black 1px 1px 3px;
+    padding-top: 100px;
+}
+
+#slide3 small {
+	position: absolute;
+	bottom: 10px;
+	right: 5px;
+	font-size: 18px;
+	color: black;
+}
+
+
+/***********************************************************************\
+|                                                                       |
+|  Navigation buttons                                                   |
+|                                                                       |
+\***********************************************************************/
+
+.menu button {
+    display: block;
+    cursor: pointer;
+    float: left;
+    text-align: center;
+    background-image: -moz-linear-gradient(#F9F9F9, #8C8C8C);
+    border: 1px solid #6D6D6D;
+    margin: 1px 5px 1px 0px;
+    padding: 1px 3px;
+    user-select         : none;
+    -o-user-select      : none;
+    -moz-user-select    : none;
+    -webkit-user-select : none;
+    border-radius                  : 12px;
+    -o-border-top-left-radius      : 12px;
+    -moz-border-radius-topleft     : 12px;
+    -webkit-border-top-left-radius : 12px;
+}
+
+.menu button:hover {
+    background-image: -moz-linear-gradient(#F9F9F9 50%, #8C8C8C );
+}
+
+.menu button:first-child {
+    border-top-left-radius         : 1em;
+    -o-border-top-left-radius      : 1em;
+    -moz-border-radius-topleft     : 1em;
+    -webkit-border-top-left-radius : 1em;
+    border-bottom-left-radius         : 1em;
+    -o-border-bottom-left-radius      : 1em;
+    -moz-border-radius-bottomleft     : 1em;
+    -webkit-border-bottom-left-radius : 1em;
+}
+
+.menu button:last-child {
+    border-top-right-radius         : 1em;
+    -o-border-top-right-radius      : 1em;
+    -moz-border-radius-topright     : 1em;
+    -webkit-border-top-right-radius : 1em;
+    border-bottom-right-radius         : 1em;
+    -o-border-bottom-right-radius      : 1em;
+    -moz-border-radius-bottomright     : 1em;
+    -webkit-border-bottom-right-radius : 1em;
+}
+
+/* navigation menu */
+#slideshow .menu {
+  position: absolute;
+  /*bottom: 0;*/
+  /*right: 2em;*/
+  /*font-size: 0.75em;*/
+  bottom: -32px;
+  left: 300px;
+	margin: 0;
+  border-radius         : 0px;
+  -o-border-radius      : 0px;
+  -moz-border-radius    : 0px;
+  -webkit-border-radius : 0px;
+  box-shadow         : none;
+  -o-box-shadow      : none;
+  -moz-box-shadow    : none;
+  -webkit-box-shadow : none;
+  z-index: 2;
+}
+/* no transition for the menu! */
+#slideshow .menu {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+#slideshow .menu button {
+  opacity: 1;
+  transition         : none;
+  -o-transition      : none;
+  -moz-transition    : none;
+  -webkit-transition : none;
+}
+#slideshow .menu button[smil=idle] {
+  opacity: 0.5;
+  transform         : none;
+  -o-transform      : none;
+  -moz-transform    : none;
+  -webkit-transform : none;
+}
+
+/***********************************************************************\
+|                                                                       |
+|  CSS3 Transitions                                                     |
+|                                                                       |
+|***********************************************************************|
+|                                                                       |
+|  'transform' and 'transition' rules are supported by these browsers:  |
+|    Firefox 4+                                                         |
+|    Chrome 5+                                                          |
+|    Safari 4+                                                          |
+|    Opera 10.6+                                                        |
+|                                                                       |
+|  => on other browsers, only the 'opacity' rule would apply            |
+|                                                                       |
+\***********************************************************************/
+
+#slideshow * {
+  transition         : all 1s;
+  -o-transition      : all 1s;
+  -moz-transition    : all 1s;
+  -webkit-transition : all 1s;
+  /*transition         : opacity 1s,         transform 1s;*/
+  /*-o-transition      : opacity 1s,      -o-transform 1s;*/
+  /*-moz-transition    : opacity 1s,    -moz-transform 1s;*/
+  /*-webkit-transition : opacity 1s, -webkit-transform 1s;*/
+}
+
+.slide #slideshow > *[smil=idle] {
+  transform         : translate(+120% ,0);
+  -o-transform      : translate(+120% ,0);
+  -moz-transform    : translate(+120% ,0);
+  -webkit-transform : translate(+120% ,0);
+}
+.slide #slideshow > *[smil=done] {
+  transform         : translate(-120% ,0);
+  -o-transform      : translate(-120% ,0);
+  -moz-transform    : translate(-120% ,0);
+  -webkit-transform : translate(-120% ,0);
+}
+.slide #slideshow > *[smil=active] {
+  z-index: 1;
+}

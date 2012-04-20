@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>How I made my resume&#133; after the 50th time ?</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="../timesheets.js"></script>
+  <script>
+    // add custom keyboard shortcuts for the slideshow player
+    EVENTS.onDOMReady(function() {
+    var prevKeyCode = 37; // left arrow key
+    var nextKeyCode = 39; // right arrow key
+    var prevButton = document.getElementById("prev");
+    var nextButton = document.getElementById("next");
+
+    EVENTS.bind(document, "keydown", function(e) {
+        switch(e.keyCode) {
+            case prevKeyCode:
+            EVENTS.trigger(prevButton, "click");
+            break;
+            case nextKeyCode:
+            EVENTS.trigger(nextButton, "click");
+            break;
+        }
+    });
+    
+    });
+  </script>
+</head>
+
+<body class="slide">
+
+    <section>
+        <div id="slideshow"
+         data-timecontainer = "seq"
+         data-timeaction    = "intrinsic"
+         data-navigation    = "arrows; hash; scroll;"
+         data-first         = "first.click"
+         data-prev          = "prev.click"
+         data-next          = "next.click"
+         data-last          = "last.click">
+    
+        <div id="slide1" class="present">
+            <h1>How I made my resume </h1>
+            <hr />
+            <small>&#133;after the 50<sup>th</sup> time?</small>
+        </div>
+      
+        <div id="slide2" class="present">
+            <h1>Few weeks ago, I was looking for a job.</h1>
+        </div>
+        
+        <div id="slide3" class="present">
+            <h1>So I crafted a common resume:</h1>
+            <img src="images/cv_capture.png"></img>
+            <small>Yeah, I know, it's not really glamor!</small>
+        </div>
+        
+        <div id="slide4" class="present">
+            Few responses later&#133; few interviews&#133; nothing serious!
+            <small>(and by serious, I mean contract!)</small>
+        </div>
+        
+        <div id="slide5" class="present">
+            So, I decide to have fun and hack my resume.
+        </div>
+        
+        <div id="slide6" class="present">
+            Here's the result of my hacks!
+        </div>
+        
+        <div id="slide7">
+            Julia Buchner
+            julia.buchner.fr | julia@buchner.fr
+        </div>
+        
+        <div id="slide8">
+            It's all about storytelling (other guys talk about timeline).
+        </div>
+        
+        <div id="slide9">
+            Timeline
+        </div>
+        
+        <div id="slide10">
+            2004 - The Math Girl
+        </div>
+        
+        <div id="slide11">
+            After high school, I decided to join SUPINFO Paris, because 
+            I was pretty good in fixing computer problems <small>(yeah, you know, 
+            when all your family and your neighbours ask for you when they 
+            have a problem with a machin&#133; even when it's the microwave)</small>.
+        </div>
+        
+        <div id="slide12">
+            2007 - The Adventure Girl
+        </div>
+        
+        <div id="slide13">
+            China + Free Software
+        </div>
+        
+        <div id="slide14">
+            2010 - The Web Girl
+        </div>
+        
+        <div id="slide15">
+            Cours de management + création d'entreprise en classe 
+            + TechCrunch + Girls In Tech Paris
+            I focused on community business
+        </div>
+        
+        <div id="slide16">
+            2011 - The Mozillian Girl
+        </div>
+        
+        <div id="slide17">
+            Mozilla Reps
+        </div>
+        
+        <div id="slide18">
+            Recap Timeline
+        </div>
+        
+        <div id="slide19">
+            2012 - ???
+        </div>
+        
+        <div id="slide20">
+            Put here a picture of the person who will receive this resume
+        </div>
+        
+        <div id="slide21">
+            Let's meet!
+            julia.buchner.fr | julia@buchner.fr
+            Twitter @GiulianT
+            Linkedin.com
+        </div>
+        
+        <div id="slide22">
+            Thanks for your reading !
+        </div>
+        
+        <div id="slide23">
+            One more thing&#133;
+        </div>
+        
+        <p class="menu" data-timeaction="none">
+        <button id="first" title="first slide">&laquo;</button>
+        <button id="prev"  title="previous slide">&lt;</button>
+        <button id="next"  title="next slide">&gt;</button>
+        <button id="last"  title="last slide">&raquo;</button>
+      </p>
+        </div><!-- end #slideshow -->
+    </div><!-- end #demo -->
+    <footer>
+        
+    </footer>
+</body>
