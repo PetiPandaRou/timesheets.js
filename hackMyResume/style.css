@@ -14,6 +14,7 @@
     padding: 0 auto;
     margin: 0 auto;
     font-family: "Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-align: center;
 }
 
 body, section { width: 728px; }
@@ -27,10 +28,10 @@ header {
     background-image: -o-linear-gradient(rgb(194, 190, 186), rgb(124, 121, 118));
     background-image: linear-gradient(center top ,  rgb(194, 190, 186), rgb(124, 121, 118));
     border-top: 1px solid #DDDDDD;
-	-webkit-border-radius: 3px 3px 0px 0px;
-	-moz-border-radius   : 3px 3px 0px 0px;
+	-webkit-border-radius: 5px 5px 0px 0px;
+	-moz-border-radius   : 25px 25px 0px 0px;
 	-o-border-radius     : 3px 3px 0px 0px;
-    border-radius        : 3px 3px 0px 0px;
+    border-radius        : 10px 10px 0px 0px;
     color: #333333;
 }
 
@@ -79,7 +80,6 @@ div.present {
     background-image: url(images/background.jpg);
     color: white;
     font-size: 36px;
-    text-align: center;
     text-shadow: black 1px 1px 3px;
 }
 
@@ -97,10 +97,10 @@ div.present {
 
 #slide3 img {
     position: absolute;
-    transform         : rotate(10deg);
     -o-transform      : rotate(10deg);
     -moz-transform    : rotate(10deg);
     -webkit-transform : rotate(10deg);
+    transform         : rotate(10deg);
 	left: 0px;
     bottom: -40px;
     border: 2px solid #000000;
@@ -108,7 +108,6 @@ div.present {
 
 #slide3 h1, #slide4 h1, #slide4 h2 {
     font-size: 36px;
-    text-align: center;
     text-shadow: black 1px 1px 3px;
 }
 
@@ -124,8 +123,36 @@ div.present {
 }
 
 div.resume {
-	background-color: #FBFBDF;
+	background-color: #FFFFFF;
 }
+
+div.resume h1 {
+	font-size: 36px;
+	padding: 20px 0;
+}
+
+div.resume a { color: #000000; }
+
+#slide8 small {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	font-size: 18px;
+}
+
+#slide8 small.credit {left: 10px!important;}
+
+#slide8 img {
+ 	border: 1px solid grey;
+	margin-top: 2px;
+	padding: 15px; 
+	background-color: #FBFBDF;
+    transform         : rotate(10deg);
+	-moz-transform    : rotate(-5deg);
+}
+
+
+
 
 /***********************************************************************\
 |                                                                       |
@@ -137,7 +164,6 @@ div.resume {
     display: block;
     cursor: pointer;
     float: left;
-    text-align: center;
     background-image: -webkit-linear-gradient(#F9F9F9, #8C8C8C);
     background-image: -moz-linear-gradient(#F9F9F9, #8C8C8C);
     background-image: -o-linear-gradient(#F9F9F9, #8C8C8C);
