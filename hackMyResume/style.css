@@ -1,8 +1,8 @@
-/*******************************************************************\
-|                                                                   |
-|  Layout                                                           |
-|                                                                   |
-\*******************************************************************/
+/************************************************************************\
+|                                                                        |
+|  Layout                                                                |
+|                                                                        |
+\************************************************************************/
 
 @font-face {
     font-family: "Ubuntu";
@@ -13,35 +13,38 @@
     border: none;
     padding: 0 auto;
     margin: 0 auto;
-    font-family: "Ubuntu", "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-body {
-    width:728px;
-    padding-top: 30px;
-    padding-bottom: 10px;
-}
+body, section { width: 728px; }
+body { padding: 30px 0px 10px 0; }
 
 header {
-    background-color: rgb(34, 34, 34);
-    background-repeat: repeat-x;
-    background-image: -moz-linear-gradient(center top , rgb(194, 190, 186), rgb(124, 121, 118));
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25), 0px -1px 0px rgba(0, 0, 0, 0.1) inset;
-    border-top: 1px solid rgb(221, 221, 221);
-    border-radius: 3px 3px 0px 0px;
-    color: rgb(51, 51, 51);
     height: 28px;
+    background-color: #222222;
+    background-image: -webkit-linear-gradient(rgb(194, 190, 186), rgb(124, 121, 118));
+    background-image: -moz-linear-gradient(rgb(194, 190, 186), rgb(124, 121, 118));
+    background-image: -o-linear-gradient(rgb(194, 190, 186), rgb(124, 121, 118));
+    background-image: linear-gradient(center top ,  rgb(194, 190, 186), rgb(124, 121, 118));
+    border-top: 1px solid #DDDDDD;
+	-webkit-border-radius: 3px 3px 0px 0px;
+	-moz-border-radius   : 3px 3px 0px 0px;
+	-o-border-radius     : 3px 3px 0px 0px;
+    border-radius        : 3px 3px 0px 0px;
+    color: #333333;
 }
 
 section {
-    width: 728px;
     height: 580px;
     background-color: rgb(76, 73, 70);
     overflow: hidden;
 }
 
 footer {
+    background-image: -webkit-linear-gradient(rgb(236, 236, 236), rgb(168, 168, 168));
     background-image: -moz-linear-gradient(rgb(236, 236, 236), rgb(168, 168, 168));
+    background-image: -o-linear-gradient(rgb(236, 236, 236), rgb(168, 168, 168));
+    background-image: linear-gradient(rgb(236, 236, 236), rgb(168, 168, 168));
     border-bottom: 1px solid rgb(136, 136, 136);
     border-top: 1px solid rgb(204, 204, 204);
     overflow: hidden;
@@ -57,61 +60,62 @@ footer {
 |                                                                       |
 \***********************************************************************/
 
-#slideshow {
+#slideshow, #slideshow  > div {
     width: 722px;
     height: 542px;
-    overflow: none;
-    position: relative;
 }
 
-#slideshow > div {
+#slideshow {
+    position: relative;
+    overflow: none;
+}
+
+#slideshow  > div {
     position: absolute;
     overflow: hidden;
-    width: 722px;
-    height: 542px;
 }
 
 div.present {
     background-image: url(images/background.jpg);
     color: white;
-}
-
-#slide1, #slide2 {
     font-size: 36px;
     text-align: center;
     text-shadow: black 1px 1px 3px;
 }
 
-#slide1 h1, #slide2 h1 {
+#slide1 h1, #slide2 h1, #slide5 h1, #slide6 h1 {
     padding-top: 200px;
 }
 
 #slide1 hr {
+    width: 85%;
+    height: 3px;
     background-color: #FFFFFF;
     opacity: 0.75;
-    height: 3px;
-    width: 85%;
     margin-top: 10px;
 }
 
 #slide3 img {
     position: absolute;
-    transform         : rotate(-10deg);
+    transform         : rotate(10deg);
     -o-transform      : rotate(10deg);
     -moz-transform    : rotate(10deg);
     -webkit-transform : rotate(10deg);
+	left: 0px;
     bottom: -40px;
-    border: 2px solid black;
+    border: 2px solid #000000;
 }
 
-#slide3 h1 {
+#slide3 h1, #slide4 h1, #slide4 h2 {
     font-size: 36px;
     text-align: center;
     text-shadow: black 1px 1px 3px;
-    padding-top: 100px;
 }
 
-#slide3 small {
+#slide3 h1, #slide4 h1 { padding-top: 100px; }
+#slide4 h2 { padding-top: 150px; }
+
+#slide3 small, #slide4 small {
 	position: absolute;
 	bottom: 10px;
 	right: 5px;
@@ -119,6 +123,9 @@ div.present {
 	color: black;
 }
 
+div.resume {
+	background-color: #FBFBDF;
+}
 
 /***********************************************************************\
 |                                                                       |
@@ -131,22 +138,29 @@ div.present {
     cursor: pointer;
     float: left;
     text-align: center;
+    background-image: -webkit-linear-gradient(#F9F9F9, #8C8C8C);
     background-image: -moz-linear-gradient(#F9F9F9, #8C8C8C);
+    background-image: -o-linear-gradient(#F9F9F9, #8C8C8C);
+    background-image: linear-gradient(#F9F9F9, #8C8C8C);
     border: 1px solid #6D6D6D;
     margin: 1px 5px 1px 0px;
     padding: 1px 3px;
-    user-select         : none;
-    -o-user-select      : none;
-    -moz-user-select    : none;
-    -webkit-user-select : none;
-    border-radius                  : 12px;
-    -o-border-top-left-radius      : 12px;
-    -moz-border-radius-topleft     : 12px;
-    -webkit-border-top-left-radius : 12px;
+	width: 22.5px;
+    user-select        : none;
+    -o-user-select     : none;
+    -moz-user-select   : none;
+    -webkit-user-select: none;
+    border-radius                 : 12px;
+    -o-border-top-left-radius     : 12px;
+    -moz-border-radius-topleft    : 12px;
+    -webkit-border-top-left-radius: 12px;
 }
 
 .menu button:hover {
+    background-image: -webkit-linear-gradient(#F9F9F9 50%, #8C8C8C );
     background-image: -moz-linear-gradient(#F9F9F9 50%, #8C8C8C );
+    background-image: -o-linear-gradient(#F9F9F9 50%, #8C8C8C );
+    background-image: linear-gradient(#F9F9F9 50%, #8C8C8C );
 }
 
 .menu button:first-child {
