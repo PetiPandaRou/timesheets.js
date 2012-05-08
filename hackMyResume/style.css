@@ -198,7 +198,6 @@ div.buttonresumed {
 }
 
 #slide8 img, #slide12 img {
-    width: 650px;
     border: 1px solid grey;
     margin-top: 15px;
     padding: 15px;
@@ -219,10 +218,6 @@ div.timeline {
     padding-top: 10px;
     padding-bottom: 40px;
     font-weight: normal;
-}
-
-#slide10 img {
-    height: 450px;
 }
 
 #slide11 h1 {
@@ -260,13 +255,13 @@ div.timeline {
     left: 60px;
 }
 
-#slide13 h1, #slide14 h1 {
+#slide13 h1, #slide14 h1, #slide16 h1 {
     font-size: 36px;
     padding: 200px 50px 0 50px;
 }
 
-#slide15 { padding-top: 10px; }
-#slide15 img { padding-top: 30px; }
+#slide15, #slide16 { padding-top: 10px; }
+#slide15 img, #slide16 img{ padding-top: 30px; }
 
 /***********************************************************************\
 |                                                                       |
