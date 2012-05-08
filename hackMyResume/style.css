@@ -260,6 +260,14 @@ div.timeline {
     left: 60px;
 }
 
+#slide13 h1, #slide14 h1 {
+    font-size: 36px;
+    padding: 200px 50px 0 50px;
+}
+
+#slide15 { padding-top: 10px; }
+#slide15 img { padding-top: 30px; }
+
 /***********************************************************************\
 |                                                                       |
 |  Navigation buttons                                                   |
