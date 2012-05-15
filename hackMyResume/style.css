@@ -169,7 +169,6 @@ div.buttonresumed {
     padding: 10px;
     margin-top: 10px;
     border: 1px solid black;
-    height: 500px;
     -o-transform     : rotate(-2deg);
     -moz-transform   : rotate(-2deg);
     -webkit-transform: rotate(-2deg);
@@ -206,12 +205,30 @@ div.buttonresumed {
     -o-transform     : rotate(1deg);
     transform        : rotate(1deg);
 }
+#slide9 h1{ font-size:30px; padding-top: 10px; }
 
 div.timeline {
     width: 600px;
     height: 400px;
     border: 1px solid #B7C0D6;
     background-color: #E7EBF2;
+    margin-top: 20px;
+}
+
+div.timeline ul {
+    padding: 0!important;
+    margin: 0!important;
+}
+
+div.timeline li {
+    list-style-type: none;
+    display: block;
+    float: left;
+    margin: 10px;
+    width: 278px;
+    height: 178px;
+    border: 1px solid #B7C0D6;
+    background-color: #ffffff;
 }
 
 #slide10 h1 {
@@ -255,13 +272,13 @@ div.timeline {
     left: 60px;
 }
 
-#slide13 h1, #slide14 h1, #slide16 h1 {
+#slide13 h1, #slide14 h1, #slide17 h1{
     font-size: 36px;
     padding: 200px 50px 0 50px;
 }
 
-#slide15, #slide16 { padding-top: 10px; }
-#slide15 img, #slide16 img{ padding-top: 30px; }
+#slide16 h1, #slide18 h1 { padding-top: 10px; }
+#slide15 img, #slide16 img, #slide18 img{ padding-top: 30px; }
 
 /***********************************************************************\
 |                                                                       |
