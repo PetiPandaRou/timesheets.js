@@ -212,6 +212,9 @@ div.timeline {
     height: 400px;
     border: 1px solid #B7C0D6;
     background-color: #E7EBF2;
+    background-image: url(images/timeline.png);
+    background-repeat: no-repeat;
+    background-position: center center;
     margin-top: 20px;
 }
 
@@ -224,11 +227,29 @@ div.timeline li {
     list-style-type: none;
     display: block;
     float: left;
-    margin: 10px;
-    width: 278px;
-    height: 178px;
-    border: 1px solid #B7C0D6;
-    background-color: #ffffff;
+    background-color: #ffffff;  
+    width: 269px;
+    height: 170px;
+}
+
+div.timeline li.left {
+    border-style: solid;
+    border-width: 2px 16px 2px 3px;
+    -webkit-border-image: url(images/border_timeline_left.png) 2 16 2 3 stretch;
+    -moz-border-image: url(images/border_timeline_left.png) 2 16 2 3 stretch;
+    -o-border-image: url(images/border_timeline_left.png) 2 16 2 3 stretch;
+    border-image: url(images/border_timeline_left.png) 2 16 2 3 stretch;
+    margin: 15px 7px 15px 9px;
+}
+
+div.timeline li.right {
+    border-style: solid;
+    border-width: 2px 3px 2px 16px;
+    margin: 15px 0px 15px 0;
+    -webkit-border-image: url(images/border_timeline_right.png) 2 3 2 16 stretch;
+    -moz-border-image: url(images/border_timeline_right.png) 2 3 2 16 stretch;
+    -o-border-image: url(images/border_timeline_right.png) 2 3 2 16 stretch;
+    border-image: url(images/border_timeline_right.png) 2 3 2 16 stretch;
 }
 
 #slide10 h1 {
