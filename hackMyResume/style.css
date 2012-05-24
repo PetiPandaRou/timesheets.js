@@ -1,6 +1,6 @@
 /***********************************************************************\
 |                                                                       |
-|    Layout                                                             |
+|    General Layout                                                     |
 |                                                                       |
 \***********************************************************************/
 
@@ -23,10 +23,10 @@ body { padding: 30px 0px 10px 0; }
 header {
     height: 28px;
     background-color: #222222;
-    background-image: -webkit-linear-gradient(rgb(194, 190, 186), rgb(124, 121, 118));
-    background-image: -moz-linear-gradient(rgb(194, 190, 186), rgb(124, 121, 118));
-    background-image: -o-linear-gradient(rgb(194, 190, 186), rgb(124, 121, 118));
-    background-image: linear-gradient(center top ,  rgb(194, 190, 186), rgb(124, 121, 118));
+    background-image: -webkit-linear-gradient(#C2BEBA, #7C7976);
+    background-image: -moz-linear-gradient(#C2BEBA, #7C7976);
+    background-image: -o-linear-gradient(#C2BEBA, #7C7976);
+    background-image: linear-gradient(center top , #C2BEBA, #7C7976);
     border-top: 1px solid #DDDDDD;
     -webkit-border-radius: 10px 10px 0px 0px;
     -moz-border-radius   : 10px 10px 0px 0px;
@@ -36,30 +36,23 @@ header {
 }
 
 section {
-    height: 580px;
-    background-color: rgb(76, 73, 70);
+    background-color: #4C4946;
     overflow: hidden;
 }
 
 footer {
-    background-image: -webkit-linear-gradient(rgb(236, 236, 236), rgb(168, 168, 168));
-    background-image: -moz-linear-gradient(rgb(236, 236, 236), rgb(168, 168, 168));
-    background-image: -o-linear-gradient(rgb(236, 236, 236), rgb(168, 168, 168));
-    background-image: linear-gradient(rgb(236, 236, 236), rgb(168, 168, 168));
-    border-bottom: 1px solid rgb(136, 136, 136);
-    border-top: 1px solid rgb(204, 204, 204);
+    background-image: -webkit-linear-gradient(#ECECEC, #A8A8A8);
+    background-image: -moz-linear-gradient(#ECECEC, #A8A8A8);
+    background-image: -o-linear-gradient(#ECECEC, #A8A8A8);
+    background-image: linear-gradient(#ECECEC, #A8A8A8);
+    border-bottom: 1px solid #888888;
+    border-top: 1px solid #CCCCCC;
     overflow: hidden;
     margin: 0px;
     padding: 3px 6px;
     position: relative;
     height: 31px;
 }
-
-/***********************************************************************\
-|                                                                       |
-|  Slideshow                                                            |
-|                                                                       |
-\***********************************************************************/
 
 #slideshow, #slideshow  > div {
     width: 722px;
@@ -76,16 +69,24 @@ footer {
     overflow: hidden;
 }
 
+/***********************************************************************\
+|                                                                       |
+|  Slides                                                               |
+|                                                                       |
+\***********************************************************************/
+
+/** Styles *************************************************************/
+
 div.present {
     background-image: url(images/background.jpg);
-    color: white;
+    color: #FFFFFF;
     font-size: 36px;
-    text-shadow: black 1px 1px 3px;
+    text-shadow: #000000 1px 1px 3px;
 }
 
-#slide1 h1, #slide2 h1, #slide5 h1, #slide6 h1 {
-    padding-top: 200px;
-}
+div.resume { background-color: #FFFFFF; }
+
+/** Titles *************************************************************/
 
 #slide1 hr {
     width: 85%;
@@ -94,6 +95,50 @@ div.present {
     opacity: 0.75;
     margin-top: 10px;
 }
+
+#slide1 h1, #slide2 h1, #slide5 h1, #slide6 h1 { padding-top: 200px; }
+#slide3 h1, #slide4 h1 { padding-top: 100px; }
+#slide3 h1, #slide4 h1, #slide4 h2 { font-size: 36px; }
+#slide4 h2 { padding-top: 150px; }
+
+
+div.resume h1 { font-weight: normal; padding: 10px; font-size: 30px; }
+#slide7 div.head {
+    float: right;
+    padding-top: 150px;
+    padding-right: 30px;
+    line-height: 45px;
+}
+#slide7 div.head a { color: #000000; }
+#slide8 h1 {
+    position: absolute; 
+    top: 30px; 
+    right: 50px;
+    z-index: 3;
+    color: #FFFFFF;
+}
+#slide10 h1, #slide12 h1 { padding-bottom: 40px; }
+#slide11 h1 { padding-top: 120px; }
+#slide13 h1 { position: absolute; left: 60px; bottom: 25px; }
+#slide14 h1 { padding-top: 200px; }
+#slide20 h1 { padding-bottom: 40px; }
+#slide21 h1 { padding-top: 150px; }
+#slide24 h1 {
+    position: absolute;
+    left: 70px; 
+    bottom: 25px; 
+    text-shadow: #000000 1px 1px 3px;
+    font-size: 36px;
+}
+div.meet h1 { font-size: 36px; margin-top: 150px; }
+div.meet h2 { font-size: 36px; color: #3B5998; margin-bottom: 20px; }
+div.meet a {
+    text-decoration: none;
+    color: #000000;
+    line-height: 40px;
+}
+
+/** Images *************************************************************/
 
 #slide3 img {
     position: absolute;
@@ -106,98 +151,22 @@ div.present {
     border: 2px solid #000000;
 }
 
-#slide3 h1, #slide4 h1, #slide4 h2 {
-    font-size: 36px;
-    text-shadow: black 1px 1px 3px;
-}
-
-#slide3 h1, #slide4 h1 { padding-top: 100px; }
-#slide4 h2 { padding-top: 150px; }
-
-#slide3 small, #slide4 small {
-    position: absolute;
-    bottom: 10px;
-    right: 5px;
-    font-size: 18px;
-    color: black;
-}
-
-div.resume { background-color: #FFFFFF; }
-
-div.buttonresumed {
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: bold;
-    font-size: 138.5%;
-    padding: 10px;
-    opacity: 0.75;
-    height: 95px;
-    line-height: 95px;
-    -webkit-transform : rotate(10deg);
-    -moz-transform    : rotate(10deg);
-    -o-transform      : rotate(10deg);
-    transform         : rotate(10deg);
-    -webkit-border-radius : 90px;
-    -moz-border-radius    : 90px;
-    -o-border-radius      : 90px;
-    border-radius         : 90px;
-    border: 1px solid #659635;
-    background: #99ca28;
-    text-shadow: -1px -1px 2px #777777;
-    color: #ffffff;
-    background: -webkit-linear-gradient(top, #CFE782 0%, #9BCB2A 2%, #5DA331 97%, #659635 100%);
-    background: -moz-linear-gradient(top, #CFE782 0%, #9BCB2A 2%, #5DA331 97%, #659635 100%);
-    background: -o-linear-gradient(top, #CFE782 0%, #9BCB2A 2%, #5DA331 97%, #659635 100%);
-    background: linear-gradient(top, #CFE782 0%, #9BCB2A 2%, #5DA331 97%, #659635 100%);
-}
-
-div.buttonresumed {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-}
-
-#slide7 div.head {
-    float: right;
-    padding-top: 150px;
-    padding-right: 30px;
-    line-height: 45px;
-}
-
-#slide7 div.head a { color: #000000; }
-
 #slide7  img {
-    padding: 10px;
+    padding: 15px;
     margin-top: 10px;
-    border: 1px solid black;
+    border: 1px solid #808080;
     -o-transform      : rotate(-2deg);
     -moz-transform    : rotate(-2deg);
     -webkit-transform : rotate(-2deg);
     transform         : rotate(-2deg);
-    -o-box-shadow      : black 1px 1px 3px;
-    -moz-box-shadow    : black 1px 1px 3px;
-    -webkit-box-shadow : black 1px 1px 3px;
-    box-shadow         : black 1px 1px 3px;
+    -o-box-shadow      : #000000 1px 1px 3px;
+    -moz-box-shadow    : #000000 1px 1px 3px;
+    -webkit-box-shadow : #000000 1px 1px 3px;
+    box-shadow         : #000000 1px 1px 3px;
 }
 
-#slide8 span {
-    font-size: 30px;
-    position: absolute;
-    top: 50px;
-    right: 40px;
-    color: #FFFFFF;
-    z-index: 3;
-}
-
-#slide8 small {
-    position: absolute;
-    bottom: 35px;
-    left: 40px;
-    font-size: 18px;
-    color: #ffffff;
-}
-
-#slide8 img, #slide13 img {
-    border: 1px solid grey;
+#slide8 img, #slide13 img, #slide19 img, #slide20 img.team  {
+    border: 1px solid #808080;
     margin-top: 15px;
     padding: 15px;
     -webkit-transform : rotate(1deg);
@@ -206,7 +175,82 @@ div.buttonresumed {
     transform         : rotate(1deg);
 }
 
-#slide9 h1{ font-size:30px; padding-top: 10px; }
+#slide11 li img, #slide16 img, #slide18 img {
+    padding-top: 30px;
+}
+
+#slide12 img { 
+    float: left; 
+    padding-left: 10px;
+}
+
+#slide17 img { position: absolute; }
+#slide17 img.fr { left: 70px; top: 130px; }
+#slide17 img.drum { bottom: 10px; left: 250px; }
+#slide17 img.wom { right: 70px; top: 110px; }
+#slide19 img { margin: 0; }
+
+#slide20 img.logo {
+    float: left;
+    padding: 20px;
+}
+
+#slide20 img.team {
+    float: right;
+    margin-top: 50px;
+    margin-right: 20px;
+}
+
+#slide22 img { margin-top: 15px;}
+
+#slide24 img.jack {
+    margin-top: 40px;
+    padding: 15px;
+    border: 1px solid #000000;
+    -o-box-shadow      : #000000 1px 1px 3px;
+    -moz-box-shadow    : #000000 1px 1px 3px;
+    -webkit-box-shadow : #000000 1px 1px 3px;
+    box-shadow         : #000000 1px 1px 3px;
+}
+
+#slide24 img.fleche {
+    position: absolute;
+    height: 250px;
+    top: -80px;
+    left: 270px;
+}
+
+/** Resume button ******************************************************/
+
+div.buttonresumed {
+    font-weight: bold;
+    font-size: 138.5%;
+    padding: 10px;
+    opacity: 0.75;
+    height: 95px;
+    line-height: 95px;
+    -webkit-transform: rotate(10deg);
+    -moz-transform   : rotate(10deg);
+    -o-transform     : rotate(10deg);
+    transform        : rotate(10deg);
+    -webkit-border-radius: 90px;
+    -moz-border-radius   : 90px;
+    -o-border-radius     : 90px;
+    border-radius        : 90px;
+    border: 1px solid #659635;
+    background: #99ca28;
+    text-shadow: -1px -1px 2px #777777;
+    color: #FFFFFF;
+    background: -webkit-linear-gradient(top, #CFE782 0%, #9BCB2A 2%, #5DA331 97%, #659635 100%);
+    background: -moz-linear-gradient(top, #CFE782 0%, #9BCB2A 2%, #5DA331 97%, #659635 100%);
+    background: -o-linear-gradient(top, #CFE782 0%, #9BCB2A 2%, #5DA331 97%, #659635 100%);
+    background: linear-gradient(top, #CFE782 0%, #9BCB2A 2%, #5DA331 97%, #659635 100%);
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+/** Timeline slides ****************************************************/
 
 div.timeline {
     width: 600px;
@@ -219,6 +263,8 @@ div.timeline {
     margin-top: 20px;
 }
 
+div.timeline img { height: 100px; padding-top: 10px;}
+
 div.timeline ul {
     padding: 0!important;
     margin: 0!important;
@@ -228,10 +274,10 @@ div.timeline li {
     list-style-type: none;
     display: block;
     float: left;
-    background-color: #ffffff;  
+    background-color: #FFFFFF;  
     width: 269px;
     height: 170px;
-    color: grey;
+    color: #808080;
     border-style: solid;
 }
 
@@ -253,26 +299,28 @@ div.timeline li.right {
     margin: 15px 0px 15px 0;
 }
 
-div.timeline img { height: 100px; padding-top: 10px;}
-
 div.timeline span {
-    color: rgb(59, 89, 152);
+    color: #3B5998;
     font-weight: bold;
 }
 
-#slide10 h1, #slide11 h1, #slide13 h1 {
-    font-size: 30px;
-    font-weight: normal;
-}
+/** Annotations ********************************************************/
 
-#slide10 h1 { padding: 10px 0 40px 0; }
+small { position: absolute; font-size: 18px; }
+#slide1 small, #slide11 small, #slide14 small , #slide24 small{ position: relative; }
+#slide3 small, #slide4 small { bottom: 10px; right: 5px; color: #000000; }
+#slide8 small { bottom: 35px; left: 40px; color: #ffffff; }
+#slide24 small { display: block; margin-top: 15px; }
 
-#slide11 h1 { padding-top: 120px;}
+/** Listes *************************************************************/
 
-#slide11 ul {
+#slide11 ul, #slide12 ul {
     list-style-type: none;
     padding: 0!important;
     margin: 0!important;
+}
+
+#slide11 ul {
     position: absolute;
     bottom: 80px;
 }
@@ -287,23 +335,15 @@ div.timeline span {
     font-style: italic;
 }
 
-#slide11 li img {
-    padding-top: 30px;
+#slide12 li {
+    padding: 10px 0;
+    font-size: 25px;
 }
 
-#slide13 h1 {
-    position: absolute;
-    bottom: 25px;
-    left: 60px;
-}
+/** Others *************************************************************/
 
-#slide14 h1, #slide15 h1, #slide16 h1, #slide18 h1{
-    font-size: 36px;
-    padding: 200px 50px 0 50px;
-}
-
-#slide17 h1, #slide19 h1 { padding-top: 10px; }
-#slide16 img, #slide17 img, #slide19 img{ padding-top: 30px; }
+#slide20 span { line-height: 36px; }
+#slide20 span.wo { display: block; padding-top: 80px; } 
 
 /***********************************************************************\
 |                                                                       |
