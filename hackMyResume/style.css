@@ -132,14 +132,14 @@ div.buttonresumed {
     opacity: 0.75;
     height: 95px;
     line-height: 95px;
-    -webkit-transform: rotate(10deg);
-    -moz-transform: rotate(10deg);
-    -o-transform: rotate(10deg);
-    transform: rotate(10deg);
-    -webkit-border-radius: 90px;
-    -moz-border-radius: 90px;
-    -o-border-radius: 90px;
-    border-radius: 90px;
+    -webkit-transform : rotate(10deg);
+    -moz-transform    : rotate(10deg);
+    -o-transform      : rotate(10deg);
+    transform         : rotate(10deg);
+    -webkit-border-radius : 90px;
+    -moz-border-radius    : 90px;
+    -o-border-radius      : 90px;
+    border-radius         : 90px;
     border: 1px solid #659635;
     background: #99ca28;
     text-shadow: -1px -1px 2px #777777;
@@ -169,14 +169,14 @@ div.buttonresumed {
     padding: 10px;
     margin-top: 10px;
     border: 1px solid black;
-    -o-transform     : rotate(-2deg);
-    -moz-transform   : rotate(-2deg);
-    -webkit-transform: rotate(-2deg);
-    transform        : rotate(-2deg);
-    -o-box-shadow     : black 1px 1px 3px;
-    -moz-box-shadow   : black 1px 1px 3px;
-    -webkit-box-shadow: black 1px 1px 3px;
-    box-shadow        : black 1px 1px 3px;
+    -o-transform      : rotate(-2deg);
+    -moz-transform    : rotate(-2deg);
+    -webkit-transform : rotate(-2deg);
+    transform         : rotate(-2deg);
+    -o-box-shadow      : black 1px 1px 3px;
+    -moz-box-shadow    : black 1px 1px 3px;
+    -webkit-box-shadow : black 1px 1px 3px;
+    box-shadow         : black 1px 1px 3px;
 }
 
 #slide8 span {
@@ -196,15 +196,16 @@ div.buttonresumed {
     color: #ffffff;
 }
 
-#slide8 img, #slide12 img {
+#slide8 img, #slide13 img {
     border: 1px solid grey;
     margin-top: 15px;
     padding: 15px;
-    -webkit-transform: rotate(1deg);
-    -moz-transform   : rotate(1deg);
-    -o-transform     : rotate(1deg);
-    transform        : rotate(1deg);
+    -webkit-transform : rotate(1deg);
+    -moz-transform    : rotate(1deg);
+    -o-transform      : rotate(1deg);
+    transform         : rotate(1deg);
 }
+
 #slide9 h1{ font-size:30px; padding-top: 10px; }
 
 div.timeline {
@@ -230,39 +231,43 @@ div.timeline li {
     background-color: #ffffff;  
     width: 269px;
     height: 170px;
+    color: grey;
+    border-style: solid;
 }
 
 div.timeline li.left {
-    border-style: solid;
     border-width: 2px 16px 2px 3px;
-    -webkit-border-image: url(images/border_timeline_left.png) 2 16 2 3 stretch;
-    -moz-border-image: url(images/border_timeline_left.png) 2 16 2 3 stretch;
-    -o-border-image: url(images/border_timeline_left.png) 2 16 2 3 stretch;
-    border-image: url(images/border_timeline_left.png) 2 16 2 3 stretch;
+    -webkit-border-image : url(images/border_timeline_left.png) 2 16 2 3 stretch;
+    -moz-border-image    : url(images/border_timeline_left.png) 2 16 2 3 stretch;
+    -o-border-image      : url(images/border_timeline_left.png) 2 16 2 3 stretch;
+    border-image         : url(images/border_timeline_left.png) 2 16 2 3 stretch;
     margin: 15px 7px 15px 9px;
 }
 
 div.timeline li.right {
-    border-style: solid;
     border-width: 2px 3px 2px 16px;
+    -webkit-border-image : url(images/border_timeline_right.png) 2 3 2 16 stretch;
+    -moz-border-image    : url(images/border_timeline_right.png) 2 3 2 16 stretch;
+    -o-border-image      : url(images/border_timeline_right.png) 2 3 2 16 stretch;
+    border-image         : url(images/border_timeline_right.png) 2 3 2 16 stretch;
     margin: 15px 0px 15px 0;
-    -webkit-border-image: url(images/border_timeline_right.png) 2 3 2 16 stretch;
-    -moz-border-image: url(images/border_timeline_right.png) 2 3 2 16 stretch;
-    -o-border-image: url(images/border_timeline_right.png) 2 3 2 16 stretch;
-    border-image: url(images/border_timeline_right.png) 2 3 2 16 stretch;
 }
 
-#slide10 h1 {
-    padding-top: 10px;
-    padding-bottom: 40px;
-    font-weight: normal;
+div.timeline img { height: 100px; padding-top: 10px;}
+
+div.timeline span {
+    color: rgb(59, 89, 152);
+    font-weight: bold;
 }
 
-#slide11 h1 {
-    padding-top: 120px;
+#slide10 h1, #slide11 h1, #slide13 h1 {
     font-size: 30px;
     font-weight: normal;
 }
+
+#slide10 h1 { padding: 10px 0 40px 0; }
+
+#slide11 h1 { padding-top: 120px;}
 
 #slide11 ul {
     list-style-type: none;
@@ -286,20 +291,19 @@ div.timeline li.right {
     padding-top: 30px;
 }
 
-#slide12 span {
-    font-size: 30px;
+#slide13 h1 {
     position: absolute;
     bottom: 25px;
     left: 60px;
 }
 
-#slide13 h1, #slide14 h1, #slide17 h1{
+#slide14 h1, #slide15 h1, #slide16 h1, #slide18 h1{
     font-size: 36px;
     padding: 200px 50px 0 50px;
 }
 
-#slide16 h1, #slide18 h1 { padding-top: 10px; }
-#slide15 img, #slide16 img, #slide18 img{ padding-top: 30px; }
+#slide17 h1, #slide19 h1 { padding-top: 10px; }
+#slide16 img, #slide17 img, #slide19 img{ padding-top: 30px; }
 
 /***********************************************************************\
 |                                                                       |
