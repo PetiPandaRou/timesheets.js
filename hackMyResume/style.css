@@ -1,4 +1,4 @@
-/***********************************************************************\
+﻿/***********************************************************************\
 |                                                                       |
 |    General Layout                                                     |
 |                                                                       |
@@ -100,7 +100,7 @@ div.resume { background-color: #FFFFFF; }
 #slide3 h1, #slide4 h1 { padding-top: 100px; }
 #slide3 h1, #slide4 h1, #slide4 h2 { font-size: 36px; }
 #slide4 h2 { padding-top: 150px; }
-
+#slide5 h1 { padding-left: 10px; padding-right: 10px;}
 
 div.resume h1 { font-weight: normal; padding: 10px; font-size: 30px; }
 #slide7 div.head {
@@ -119,17 +119,10 @@ div.resume h1 { font-weight: normal; padding: 10px; font-size: 30px; }
 }
 #slide10 h1, #slide12 h1 { padding-bottom: 40px; }
 #slide11 h1 { padding-top: 120px; }
-#slide13 h1 { position: absolute; left: 60px; bottom: 25px; }
-#slide14 h1 { padding-top: 200px; }
+#slide13 h1 { position: absolute; left: 60px; bottom: 15px; }
+#slide14 h1 { padding: 200px 10px 0 10px; }
 #slide20 h1 { padding-bottom: 40px; }
 #slide21 h1 { padding-top: 150px; }
-#slide24 h1 {
-    position: absolute;
-    left: 70px; 
-    bottom: 25px; 
-    text-shadow: #000000 1px 1px 3px;
-    font-size: 36px;
-}
 div.meet h1 { font-size: 36px; margin-top: 150px; }
 div.meet h2 { font-size: 36px; color: #3B5998; margin-bottom: 20px; }
 div.meet a {
@@ -165,17 +158,20 @@ div.meet a {
     box-shadow         : #000000 1px 1px 3px;
 }
 
-#slide8 img, #slide13 img, #slide19 img, #slide20 img.team  {
+#slide8 img, #slide13 img, #slide15 img, #slide16 img, #slide19 img, #slide20 img.team, #slide22 img, #slide24 img  {
     border: 1px solid #808080;
-    margin-top: 15px;
     padding: 15px;
+}
+
+#slide8 img, #slide13 img, #slide19 img  {
+    margin-top: 15px;
     -webkit-transform : rotate(1deg);
     -moz-transform    : rotate(1deg);
     -o-transform      : rotate(1deg);
     transform         : rotate(1deg);
 }
 
-#slide11 li img, #slide16 img, #slide18 img {
+#slide11 li img, #slide18 img {
     padding-top: 30px;
 }
 
@@ -184,6 +180,8 @@ div.meet a {
     padding-left: 10px;
 }
 
+#slide15 img { margin-top: 2px; }
+#slide16 img { margin-top: 10px; }
 #slide17 img { position: absolute; }
 #slide17 img.fr { left: 70px; top: 130px; }
 #slide17 img.drum { bottom: 10px; left: 250px; }
@@ -199,25 +197,6 @@ div.meet a {
     float: right;
     margin-top: 50px;
     margin-right: 20px;
-}
-
-#slide22 img { margin-top: 15px;}
-
-#slide24 img.jack {
-    margin-top: 40px;
-    padding: 15px;
-    border: 1px solid #000000;
-    -o-box-shadow      : #000000 1px 1px 3px;
-    -moz-box-shadow    : #000000 1px 1px 3px;
-    -webkit-box-shadow : #000000 1px 1px 3px;
-    box-shadow         : #000000 1px 1px 3px;
-}
-
-#slide24 img.fleche {
-    position: absolute;
-    height: 250px;
-    top: -80px;
-    left: 270px;
 }
 
 /** Resume button ******************************************************/
@@ -310,7 +289,9 @@ small { position: absolute; font-size: 18px; }
 #slide1 small, #slide11 small, #slide14 small , #slide24 small{ position: relative; }
 #slide3 small, #slide4 small { bottom: 10px; right: 5px; color: #000000; }
 #slide8 small { bottom: 35px; left: 40px; color: #ffffff; }
+#slide14 small { padding: 0 10px; }
 #slide24 small { display: block; margin-top: 15px; }
+#slide16 small { bottom: 25px; left: 40px; }
 
 /** Listes *************************************************************/
 
